@@ -81,7 +81,7 @@
 									</header>
 									
 									<div class="ex1"><p style ="color: black";>
- <iframe src="//www.youtube.com/embed/G59mX_wqfG0?rel=0" width="100%" height="350px;"></iframe>	<br> </br>								
+ <iframe style="padding-bottom: 5px;"   src="//www.youtube.com/embed/G59mX_wqfG0?rel=0" width="100%" height="350px;"></iframe>								
 NOTE: This area is incomplete. Missing course description. Please come up with one so I can add it here.
 
 
@@ -162,8 +162,21 @@ NOTE: This area is incomplete. Missing course description. Please come up with o
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-		<script>	if (top.location!= self.location) {
-   top.location = self.location.href; </script>
+		<!-- <script>	if (top.location!= self.location) {
+   top.location = self.location.href; </script> -->
+
+<script type="text/javascript"> // if site open in iframe then redirect to main site
+      
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+  $(function(){
+ if(window.top.location != window.self.location)
+             {
+                top.window.location.href = window.self.location;
+             }
+        });
+}
+</script>
+
    
 
 
